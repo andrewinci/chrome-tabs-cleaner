@@ -14,7 +14,9 @@
     "bundle": "yarn lint && yarn build && cd dist && bestzip ../tabscleaner.zip *",
     "release": "semantic-release --repositoryUrl=\"https://github.com/andrewinci/tabscleaner.git\" --ci false"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/commit-analyzer": "^9.0.2",
@@ -23,6 +25,7 @@
     "@semantic-release/github": "^8.0.7",
     "@semantic-release/release-notes-generator": "^10.0.3",
     "@types/chrome": "^0.0.224",
+    "@types/lodash": "^4.14.198",
     "@typescript-eslint/eslint-plugin": "^6.7.2",
     "@typescript-eslint/parser": "^6.7.2",
     "bestzip": "^2.2.1",
