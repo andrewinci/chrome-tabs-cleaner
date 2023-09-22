@@ -37,7 +37,8 @@ const onRun = async () => {
             title: kv[0],
             collapsed: true,
           })
-        );
+        )
+        .then((tabGroup) => chrome.tabGroups.move(tabGroup.id, { index: 0 }));
     }
   });
 };
